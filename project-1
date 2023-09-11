@@ -1,0 +1,62 @@
+// Week 2 - Simple Programs - Project 1
+// Mandatory Program
+// E.W., Tuesday, February 2nd, 2021
+#include <iostream>
+using namespace std;
+int main()
+{
+cout << "Enter your first integer (A): "; // prompt, asks for and accepts first integer as input
+int i1;
+cin >> i1;
+cout << "For your first integer (A), you entered: " << i1 << endl;
+cout << "\nEnter your second integer (B): "; // prompt, asks for and accepts second integer as
+input
+int i2;
+cin >> i2;
+cout << "For your second integer (B), you entered: " << i2 << endl; //
+
+// part 1 - the sum of the two integers
+int theSum = i1 + i2;
+cout << "\nThe sum (A+B) is: " << theSum << endl;
+
+// part 2 - the 1st integer minus the 2nd
+int AminusB = i1 - i2;
+cout << "\nThe first integer (A) minus the second integer (B) is: " << AminusB << endl;
+
+// part 3 - the 2nd integer minus the 1st
+int BminusA = i2 - i1;
+cout << "\nThe second integer (B) minus the first integer (A) is: " << BminusA << endl;
+
+// part 4 - the product of the two integers
+int Product = i1*i2;
+cout << "\nThe product of the first integer (A) and the second integer (B) is: " << Product <<
+endl;
+
+// part 5 - the 1st integer divided by the 2nd
+double AdivB = (((double)i1)/(i2));
+cout << "\nThe first integer (A) divided by the second integer (B) is: " << AdivB << endl;
+
+// part 6 - the 2nd integer divided by the 1st
+double BdivA = (((double)i2/(i1)));
+cout << "\nThe second integer (B) divided by the first integer (A) is: " << BdivA << endl;
+
+// part 7 - the 1st integer modulo the 2nd
+int modulo1 = i1%i2;
+cout << "\nThe first integer (A) modulo the second integer (B) is: " << modulo1 << endl;
+
+// part 8 - the 2nd integer modulo the 1st
+int modulo2 = i2%i1;
+cout << "\nThe second integer (B) modulo the first integer (A) is: " << modulo2 << endl;
+
+// part 9 - whether or not the integers are equal and if they're not...
+if (i1 == i2) {
+cout << "\nThe first integer (A) is equal to the second integer (B)!";
+} else if (i1>i2) {
+cout << "\nThe first integer (A) is greater than the second integer (B)."; // part 10 - which
+one is greater
+} else if (i1<i2) {
+cout << "\nThe second integer (B) is greater than the first integer (A)."; // cont. part 10 -
+which one is greater
+}
+return 0;
+}
